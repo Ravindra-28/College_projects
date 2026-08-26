@@ -286,15 +286,7 @@ nav {
   transition: .35s;
 }
 .project:hover { transform: translateY(-7px); }
-.project-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  transition: .35s;
-}
-.project-link:hover .project {
-  transform: translateY(-7px);
-}
+.project-link { display: block; color: inherit; }
 .project-visual {
   height: 210px;
   padding: 25px;
@@ -334,6 +326,18 @@ nav {
   border-radius: 100px;
   padding: 5px 9px;
 }
+.project-actions { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 18px; }
+.project-action {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 7px 11px;
+  color: #dfe4ee;
+  font-size: .74rem;
+  font-weight: 700;
+  transition: .25s;
+}
+.project-action:hover { border-color: var(--accent-2); color: white; transform: translateY(-2px); }
+.project-action.primary-action { background: var(--accent); border-color: var(--accent); color: #090a0f; }
 
 /* TIMELINE */
 .timeline {
